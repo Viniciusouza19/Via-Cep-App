@@ -16,7 +16,7 @@ O **Aplicativo Via CEP Flutter** foi projetado para fornecer aos usuários uma i
 
 Aqui está um GIF demonstrando como o aplicativo funciona:
 
-![Demonstração do Funcionamento]([insira_o_link_do_seu_gif_aqui](https://github.com/Viniciusouza19/Via-Cep-App/blob/main/prev/prefGif.gif))
+![Demonstração do Funcionamento](https://github.com/Viniciusouza19/Via-Cep-App/blob/main/prev/prefGif.gif)
 
 ## Configurando o Projeto
 
