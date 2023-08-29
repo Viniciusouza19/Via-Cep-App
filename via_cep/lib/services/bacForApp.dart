@@ -2,14 +2,14 @@ import 'package:flutter/foundation.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 import 'package:via_cep/models/cep.dart';
 
+import '../app_config.dart';
+
 class BackForAppService {
-  static const keyApplicationId = 'WIelr53OcsZT5c8SpxWLlYY0iHEbca74KXBi0EG4';
-  static const keyClientKey = '9PeyT1lOJ1rvZI43VVdfz3jlnHgdaN0SFfkyUJFP';
-  static const keyParseServerUrl = 'https://parseapi.back4app.com';
+  
 
   static dynamic backForInit() async {
-    await Parse().initialize(keyApplicationId, keyParseServerUrl,
-        clientKey: keyClientKey, autoSendSessionId: true);
+    await Parse().initialize(AppConfig.keyApplicationId, AppConfig.keyParseServerUrl,
+        clientKey: AppConfig.keyClientKey, autoSendSessionId: true);
   }
 
   Future<bool> addCep(Cep cep) async {
