@@ -1,8 +1,10 @@
 import 'package:dio/dio.dart';
+import 'package:via_cep/services/ICepApi.dart';
 
-class ViaCepApi {
+class ViaCepApi  implements CepApi{
   final Dio _dio = Dio();
 
+  @override
   Future<Map<String, dynamic>?> fetchCepData(String cep) async {
     try {
       final response = await _dio.get('https://viacep.com.br/ws/$cep/json/');

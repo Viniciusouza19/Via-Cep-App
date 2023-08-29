@@ -74,31 +74,5 @@ class Cep {
   String? get siafi => _siafi;
   set siafi(String? siafi) => _siafi = siafi;
 
-  Cep.fromJson(Map<String, dynamic> json) {
-    _cep = json['cep'];
-    _logradouro = json['logradouro'];
-    _complemento = json['complemento'];
-    _bairro = json['bairro'];
-    _localidade = json['localidade'];
-    _uf = json['uf'];
-    _ibge = json['ibge'];
-    _gia = json['gia'];
-    _ddd = json['ddd'];
-    _siafi = json['siafi'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['cep'] = _cep;
-    data['logradouro'] = _logradouro;
-    data['complemento'] = _complemento;
-    data['bairro'] = _bairro;
-    data['localidade'] = _localidade;
-    data['uf'] = _uf;
-    data['ibge'] = _ibge;
-    data['gia'] = _gia;
-    data['ddd'] = _ddd;
-    data['siafi'] = _siafi;
-    return data;
-  }
+ 
 }
